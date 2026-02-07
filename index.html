@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>XIMI-V Ottawa – Google Review</title>
 
-  <!-- Favicon using local logo -->
-  <link rel="icon" href="ximi-V-logo.png" type="image/png">
+  <!-- Favicon using GitHub-hosted logo -->
+  <link
+    rel="icon"
+    href="https://raw.githubusercontent.com/qrbusinessservices/ximi-v/main/ximi-v-logo.png"
+    type="image/png"
+  >
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -17,6 +21,7 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Floating Toys -->
@@ -33,27 +38,47 @@
 
   <!-- Main Card -->
   <div class="main-card">
-    <!-- Local logo -->
-    <img src="ximi-V-logo.png" alt="XIMI-V Logo" class="animated-logo">
+
+    <!-- GitHub-hosted logo -->
+    <img
+      src="https://raw.githubusercontent.com/qrbusinessservices/ximi-v/main/ximi-v-logo.png"
+      alt="XIMI-V Logo"
+      class="animated-logo"
+    >
 
     <h1>Welcome to XIMI-V</h1>
-    <p>Thank you for visiting <b>XIMI-V, St. Laurent Blvd, Ottawa, ON K1K 4H4</b>.<br>Your feedback helps us improve your shopping experience.</p>
+    <p>
+      Thank you for visiting
+      <b>XIMI-V, St. Laurent Blvd, Ottawa, ON K1K 4H4</b>.<br>
+      Your feedback helps us improve your shopping experience.
+    </p>
 
     <!-- Google Review -->
     <div class="qr-card p-6 flex flex-col items-center mt-10">
       <div class="bg-white p-4 rounded-xl shadow-inner">
         <canvas id="qr-google"></canvas>
       </div>
+
       <h2 class="mt-6 mb-2">Google Maps Review</h2>
-      <p class="text-sm text-gray-500 mb-4">Share your experience directly on Google.</p>
-      <a href="https://www.google.com/search?sca_esv=ba24c2d2484ecd3d&rlz=1C1ONGR_enCA1147CA1147&sxsrf=ANbL-n5ZPqkzUiwWuYCxIUwUkpD0o51Zbg:1770420485133&q=ximi-v+ottawa+reviews&uds=ALYpb_kZZVVAl2rcYDLox25MJ3lKKcmbM60qxlqQKLgMbYg0C7HkiZhlMeRsaua_VQARU2NdeJZplMKFE8WgMYL4jpv0VU_qF_SUk9qGPNWYN6OoSuxTNZrT05nUD4TXnU8oK627ABvRKlyvETWV-ItCg7HjtSNHgC7rPcwqsrmIBREu3ucJREGU_3YRzbt3WAh54M0xHzXCtTDqFZRlVUGMqpiAANKXXGVNU4obhn0RTyJxNKNk-BHvB7U2wlvZsB-B-4IWEpj2qRtzeaXgzlvhR31QxAm4-thBu3spTMg71Oi5-l4fmioglcaVgQ-nrmBFYbyZ39TjtsEDL65MEzB0pu4w3bKODYS8im3PCVaCswcJuSaxgfFjB8K6A3PH1wFvXrlHbmt8&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOS94-uRhU4EnkXHVJH0kspWJ6eCud2F0Z0J4mxndqASfCUWZH7g10Z7-Iqr5MkP199Y9LksUAH4E7w-zrhoy5Gc10iZj&sa=X&ved=2ahUKEwij7fmggsaSAxUCNlkFHXbSH3AQk8gLegQIIRAB&ictx=1&biw=428&bih=859&dpr=3&sei=cnqGabWrO8qf5NoP5NHG4AU#lrd=0x4cce0f000a0b6941:0x4b6bf3c4ee88ccd,3,,,,"
-         target="_blank"
-         class="cta-button">Leave a Google Review</a>
+      <p class="text-sm text-gray-500 mb-4">
+        Share your experience directly on Google.
+      </p>
+
+      <a
+        href="https://www.google.com/search?sca_esv=ba24c2d2484ecd3d&rlz=1C1ONGR_enCA1147CA1147&sxsrf=ANbL-n5ZPqkzUiwWuYCxIUwUkpD0o51Zbg:1770420485133&q=ximi-v+ottawa+reviews&uds=ALYpb_kZZVVAl2rcYDLox25MJ3lKKcmbM60qxlqQKLgMbYg0C7HkiZhlMeRsaua_VQARU2NdeJZplMKFE8WgMYL4jpv0VU_qF_SUk9qGPNWYN6OoSuxTNZrT05nUD4TXnU8oK627ABvRKlyvETWV-ItCg7HjtSNHgC7rPcwqsrmIBREu3ucJREGU_3YRzbt3WAh54M0xHzXCtTDqFZRlVUGMqpiAANKXXGVNU4obhn0RTyJxNKNk-BHvB7U2wlvZsB-B-4IWEpj2qRtzeaXgzlvhR31QxAm4-thBu3spTMg71Oi5-l4fmioglcaVgQ-nrmBFYbyZ39TjtsEDL65MEzB0pu4w3bKODYS8im3PCVaCswcJuSaxgfFjB8K6A3PH1wFvXrlHbmt8&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOS94-uRhU4EnkXHVJH0kspWJ6eCud2F0Z0J4mxndqASfCUWZH7g10Z7-Iqr5MkP199Y9LksUAH4E7w-zrhoy5Gc10iZj&sa=X&ved=2ahUKEwij7fmggsaSAxUCNlkFHXbSH3AQk8gLegQIIRAB&ictx=1&biw=428&bih=859&dpr=3&sei=cnqGabWrO8qf5NoP5NHG4AU#lrd=0x4cce0f000a0b6941:0x4b6bf3c4ee88ccd,3,,,,"
+        target="_blank"
+        class="cta-button"
+      >
+        Leave a Google Review
+      </a>
     </div>
 
     <footer class="mt-12 text-sm text-gray-400">
       <p>© 2025 XIMI-V. All Rights Reserved.</p>
-      <p class="mt-1">Reviewing Location: <b>XIMI-V, St. Laurent Blvd, Ottawa, ON K1K 4H4</b></p>
+      <p class="mt-1">
+        Reviewing Location:
+        <b>XIMI-V, St. Laurent Blvd, Ottawa, ON K1K 4H4</b>
+      </p>
       <p class="mt-1">Concept & Design by <b>Premsingh Padya</b></p>
       <p class="mt-2">Unauthorized reproduction or misuse is prohibited.</p>
     </footer>
@@ -61,21 +86,21 @@
 
   <!-- QR Code Library -->
   <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
-<script>
-  QRCode.toCanvas(
-    document.getElementById('qr-google'),
-    'https://search.google.com/local/writereview?placeid=ChIJQWkLCgAPzkwRzYzoTjy_tgQ',
-    {
-      width: 180,
-      margin: 10,
-      color: {
-        dark: '#000000',
-        light: '#ffffff'
-      }
-    }
-  );
-</script>
 
+  <script>
+    QRCode.toCanvas(
+      document.getElementById('qr-google'),
+      'https://search.google.com/local/writereview?placeid=ChIJQWkLCgAPzkwRzYzoTjy_tgQ',
+      {
+        width: 180,
+        margin: 10,
+        color: {
+          dark: '#000000',
+          light: '#ffffff'
+        }
+      }
+    );
+  </script>
 
 </body>
 </html>
