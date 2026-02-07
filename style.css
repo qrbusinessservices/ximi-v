@@ -1,0 +1,138 @@
+/* Body layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end; /* content on right side */
+  align-items: flex-start;    /* start from top */
+  padding-top: 80px;          /* push content a bit lower */
+  padding-right: 50px;        /* optional spacing from right edge */
+  background: linear-gradient(-45deg, #0ea5b7, #38bdf8, #facc15, #fcd34d);
+  background-size: 400% 400%;
+  animation: gradientAnimation 20s ease infinite;
+  overflow-x: hidden;
+  position: relative;
+}
+
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Main Card */
+.main-card {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  width: 90%;
+  background: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Animated Logo */
+.animated-logo {
+  width: 120px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  animation: logoPop 1.2s ease forwards;
+}
+
+@keyframes logoPop {
+  0% { transform: scale(0) rotate(-30deg); opacity: 0; }
+  60% { transform: scale(1.1) rotate(5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* QR Card */
+.qr-card {
+  position: relative;
+  background: linear-gradient(145deg, #f0f9ff, #38bdf8);
+  border-radius: 1.5rem;
+  border: 3px solid #0ea5b7;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.qr-card:hover {
+  transform: scale(1.07) rotateZ(-1deg);
+  box-shadow: 0 12px 30px rgba(14, 165, 183, 0.5);
+}
+
+/* Canvas QR */
+canvas {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.cta-button {
+  margin-top: 1.5rem;
+  padding: 0.9rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 3rem;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #0ea5b7, #075985);
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #38bdf8, #0c4a6e);
+  box-shadow: 0 8px 20px rgba(14,165,183,0.6);
+}
+
+/* Floating toys */
+.toy {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/12/Toy_block_icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  z-index: 1;
+  animation: floatToy linear infinite;
+}
+
+@keyframes floatToy {
+  0% { transform: translateY(100vh) rotate(0deg) scale(0.8); opacity: 0.3; }
+  100% { transform: translateY(-50px) rotate(360deg) scale(1); opacity: 0.8; }
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #475569;
+  text-align: center;
+}
+footer b { color: #0ea5b7; }
+
+/* Responsive */
+@media (max-width:768px){
+  .main-card { padding: 2rem; }
+  canvas { width: 150px !important; height: 150px !important; }
+  .toy { width: 30px; height: 30px; }
+}
